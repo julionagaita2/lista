@@ -8,14 +8,22 @@
     <title>Lista de tarefas</title>
 </head>
 <body>
+    <header id="cabecalho">
+
+    </header>
     <section class="main">
-        <h1>Organize suas atividades</h1>
         <div class="pai">
-        <div id="atividadesWrapper">
-            <input type="button" value="" id="editar">
-            <p><input type="text" id="atividade1" class="atividades"></p></div>
-            
-                    
+            <h1>Suas atividades</h1>
+            <button id="botaoAdicionar"><span class="icon_add" aria-hidden="true"><svg width="13" height="13"><path d="M6 6V.5a.5.5 0 011 0V6h5.5a.5.5 0 110 1H7v5.5a.5.5 0 11-1 0V7H.5a.5.5 0 010-1H6z" fill="currentColor" fill-rule="evenodd"></path></svg></span>
+                Adicionar</button>
+           
+            <div class="divInput">
+                <textarea required autocomplete="off" id="atividade" class="atividades"></textarea>
+                
+                
+                <p class="pInput"><input type="button" value="Salvar" class="enviarAtividadeBotao"></p>
+        </div></div>
+        
     </section>
     <script src="main.js"></script>
 </body>
