@@ -46,13 +46,6 @@ function criarPrimeiraAtividade() {
   novoInputSalvar.addEventListener('click', salvarAtividade);
 }
 
-function corFundo() {
-  arrayIDs[0].style.backgroundColor = '#4c5153';
-  setTimeout(function () {
-    arrayIDs[0].style.backgroundColor = "#383c3e";
-  }, 150);
-}
-
 function salvarAtividade() {
   const textarea = this.parentNode.parentNode.querySelector('textarea');
   const id = textarea.id;
